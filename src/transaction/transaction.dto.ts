@@ -1,5 +1,6 @@
+import { ApiProperty } from '@nestjs/swagger';
 export default class TransactionDto {
-  private paidBy: string;
-  private amount: number;
-  private paidFor: Array<any>;
+  @ApiProperty() private paidBy: string;
+  @ApiProperty() private amount: number;
+  @ApiProperty() private paidFor: Array<any>;
 }
